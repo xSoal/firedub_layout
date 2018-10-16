@@ -1,0 +1,69 @@
+
+
+.main-container {
+	display: flex;
+	clear: both;
+}
+
+.side-bar-left {
+	width: calc(100%/6);
+	padding: 15px 0px;
+}
+
+.content {
+	padding: 15px 0px;
+	width: calc(100%/6*5);
+	overflow: hidden;
+
+	&-full-size {
+		width: 100%;
+		padding: 0px 3.5%;
+	}
+}
+
+.promote-relize {
+
+}
+
+.relize-image-cont {
+	
+}
+
+
+@media (max-width: 600px) {
+
+	.main-container {
+		flex-wrap: wrap;
+	}
+
+
+	.content {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+
+	.side-bar-left {
+		width: 100%;
+		align-items: center; 
+	}
+
+	.content {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		padding: 0px;
+
+		&-row {
+			padding: 0px;
+			margin: 15px 0px;
+		}
+
+		.relizes-row {
+			margin: 0px;
+		}
+	}
+
+	
+}

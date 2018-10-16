@@ -1,0 +1,74 @@
+
+
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	font-size: 16px;
+    font-family: "Kurale";
+    font-style: normal;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 1600px){
+	body {
+		font-size: 11px;
+	}
+}
+
+@media screen and (max-width: 1024px){
+	body {
+		font-size: 10px;
+	}
+}
+
+
+.relize-sizes {
+	width: 100%;
+	/*описывает формат-соотношение ширины к высоте картинки, которое по заверением будет использоваться во всех постерах*/
+	padding-top: calc(100% * 1.35483870968);
+	position: relative;
+	overflow: hidden;
+
+	/*если картинка будет другого соотношения, по ширине она будет растягиватся а по высоте центрироваться, обрезаясь по краям*/
+	&__image{
+		max-width: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+    	bottom: 0;
+    	margin: auto 0;
+
+	}
+}
+
+
+.banner-2x3 {
+
+	&__max-size {
+		/*max-width: 280px;*/
+		max-width: 85%;
+		margin: 0 auto;
+		margin-right: 15%;
+		position: relative;
+	}
+
+	&__image-cont {
+		width: 100%;
+		/*описывает формат-соотношение 2x3*/
+		padding-top: calc(100% * 1.5);
+		position: relative;
+		overflow: hidden;
+	}
+
+	&__image {
+		max-width: 100%;
+		position: absolute;
+
+		top: 0;
+    	bottom: 0;
+    	margin: auto 0;
+	}
+}

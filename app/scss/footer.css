@@ -1,0 +1,13 @@
+
+
+.footer {
+	background-image: url('/images/texture_main_menu.png');
+	height: 50px;
+    line-height: 50px;
+    padding: 0px 30px;
+
+	&__header1 {
+		color: #777;
+		font-size: 1.5em;
+	}
+}
