@@ -1,4 +1,7 @@
 
+const conf = {
+	sitedomen: "f.net",
+}
 
 var gulp = require('gulp'),
 sass 	 = require('gulp-sass'),
@@ -96,7 +99,8 @@ gulp.task('html', function(){
 
 gulp.task('serv_init',['clear', 'html', 'css', 'image' ,'js'], function(){
     browserSync.init({
-		proxy: "f.net"
+		proxy: conf.sitedomen,
+		// baseDir: './'
     });
 
 
