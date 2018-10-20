@@ -25,14 +25,11 @@
 	}
 
 	&__img {
-
+		opacity: 0;
 		margin: 0 auto;
 		transition: opacity .5s;
 	}
 
-	&__img.hiden {
-		opacity: 0;
-	}
 
 	& video {
 		width: 100%;
